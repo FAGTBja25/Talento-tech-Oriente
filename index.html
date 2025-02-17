@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriente Tours</title>
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!--Barra de navegacion-->
+    <header>
+        <div class="navegacion">
+            <div class="navegacion-left">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="logo">
+                </div>
+                <div class="menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#planes">Planes</a>
+                    <a href="#testimonios">Testimonios</a>
+                    <a href="#contactenos">Contáctenos</a>
+                </div>
+            </div>
+            <div class="navegacion-right">
+                <a href="#" class="icon"><img src="imagenes/navegador.png" alt="Icono"></a>
+                <a href="#" class="icon"><img src="imagenes/instagram.png" alt="Icono"></a>
+                <button onclick="location.href='#destinos'" class="explore-button">¡Explora Ya!</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seccion de inicio -->
+    <section class="inicio-section">
+        <div class="content">
+            <div class="text">
+                <h1>Viajes Increíbles</h1>
+                <p>Descubre el mundo de una manera única. Desde aventuras extremas hasta escapadas relajantes, ¡tenemos todo lo que necesitas para tu próxima aventura!</p>
+                <button onclick="location.href='#destinos'" class="cta-button">Comenzar Aventura</button>
+            </div>
+            <div class="image">
+                <img src="imagenes/paisaje.jpg" alt="Paisaje">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ofertas -->
+    <section id="destinos" class="offers-section">
+        <h1 class="offers-title">Destinos</h1>
+        <div class="offers-container">
+
+            <!-- Tarjeta 1 -->
+            <div class="offer-card" onclick="showDetails('details1')">
+                <img src="imagenes/barranca.jpg" alt="Paisaje 1" class="offer-image">
+                <div class="offer-details">
+                    <p class="offer-price">Santander</p>
+                    <h2 class="offer-title">Barrancabermeja</h2>
+                    <p class="offer-description">Una experiencia inolvidable en Barrancabermeja.</p>
+                </div>
+            </div>
+
+            <!-- Detalles para tarjeta 1 -->
+            <div id="details1" class="offer-extra-details">
+                <p>
+                    <strong>Barrancabermeja:</strong> Ciudad Petrolera y Cultural <br><br>
+
+                    <strong>Estadía:</strong> Hotel GHL Style. <br><br>
+
+                    <strong>Atractivos turisticos:</strong> Parque Ecológico Los Manglares, Museo del Petróleo, Puerto Petrolero, Playas del Magdalena, replica de la torre Eiffel y mucho más <br><br>
+
+                    <strong>Platos típicos:</strong> Sancocho de pescado, Carimañola, Chorizo, Arroz con coco, Pescado frito, y Arroz de bocachico salado. <br><br>
+                    
+                    <strong>Deportes de Aventura:</strong> Paseos en kayak, canotaje, caminatas ecológicas y recorridos en bicicleta. <br><br>
+
+                    <strong>Fechas especiales:</strong> Fiestas del Sol y Festival del Bollo.
+                </p>
+                <img src="imagenes/barranca2.jpg" alt="Barrancabermeja" class="extra-image">
+                <button class="close-btn" onclick="hideDetails('details1')">Cerrar</button>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="offer-card" onclick="showDetails('details2')">
+                <img src="imagenes/simacota.jpg" alt="Paisaje 2" class="offer-image">
+                <div class="offer-details">
+                    <p class="offer-price">Santander</p>
+                    <h2 class="offer-title">Simacota</h2>
+                    <p class="offer-description">Descubre la tranquilidad y belleza de Simacota.</p>
+                </div>
+            </div>
+
+            <!-- Detalles para tarjeta 2 -->
+            <div id="details2" class="offer-extra-details">
+                <p>
+                    <strong>Simacota Santander:</strong> Provincia comunera con más de 250 años de historia <br><br>
+
+                    <strong>Estadía:</strong> Hotel Boutique Simacota. <br><br>
+
+                    <strong>Paisajes naturales:</strong> Quebrada del Salto, Quebrada la Guamaca, Cueva del indio, cascada la
+                    San Miguela, cascada del mico y mucho más <br><br>
+
+                    <strong>Platos típicos:</strong> Arepa de millo, Pepitoria, Chorizo, Sopa de ruyas, cabro, carne oreada. <br><br>
+                    
+                    <strong>Deportes de Aventura:</strong> Espeleología, canotaje, caminatas ecológicas y escalada bajo agua en la cascada del mico. <br><br>
+
+                    <strong>Fechas especiales:</strong> Festival folclórico en octubre y festival del retorno en enero.
+                </p>
+                <img src="imagenes/simacota2.jpg" alt="Simacota" class="extra-image">
+                <button class="close-btn" onclick="hideDetails('details2')">Cerrar</button>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="offer-card" onclick="showDetails('details3')">
+                <img src="imagenes/bucaramanga.jpg" alt="Paisaje 3" class="offer-image">
+                <div class="offer-details">
+                    <p class="offer-price">Santander</p>
+                    <h2 class="offer-title">Bucaramanga</h2>
+                    <p class="offer-description">Explora la ciudad bonita de Colombia.</p>
+                </div>
+            </div>
+
+            <!-- Detalles para tarjeta 3 -->
+            <div id="details3" class="offer-extra-details">
+                <p>
+                    <strong>Bucaramanga Santander:</strong> La ciudad bonita <br><br>
+
+                    <strong>Estadía:</strong> Encontrarás una amplia variedad de opciones de alojamiento, desde hoteles de lujo hasta hostales y apartamentos. <br><br>
+
+                    <strong>Atractivos turisticos:</strong> Panachi, Parque del agua, Cacique centro comercial, Puente del Bicentenario, Catedral de la sagrada familia y mucho mas <br><br>
+
+                    <strong>Platos típicos:</strong> Tamal Santandereano, Cabro, Arepa Santandereana, Mute, pepitoria, carne oreada, etc. <br><br>
+                    
+                    <strong>Actividades y Entretenimiento:</strong> Parques y zonas verdes, Museos y centros culturales, Vida nocturna y deportes extremos. <br><br>
+
+                    <strong>Fechas especiales:</strong> Ferias Bonitas de Bucaramanga y Semana Nacional del Tiple.
+                </p>
+                <img src="imagenes/bucaramanga2.jpg" alt="Bucaramanga" class="extra-image">
+                <button class="close-btn" onclick="hideDetails('details3')">Cerrar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Planes de Viaje -->
+    <section id="planes">
+        <div class="pricing-container">
+            <h1 class="planes-tittle">Planes de Viaje</h1>
+            <div class="pricing-plans">
+
+                <!-- Plan Básico -->
+                <div class="plan">
+                    <h2>Básico</h2>
+                    <p class="price">$199</p>
+                    <ul>
+                        <li>Acceso a destinos</li>
+                        <li>Guía de viaje</li>
+                        <li>Soporte 24/7</li>
+                        <li>Descuentos exclusivos</li>
+                        <li>Actualizaciones de viaje</li>
+                    </ul>
+                    <button>Comprar Ahora</button>
+                </div>
+
+                <!-- Plan Avanzado -->
+                <div class="plan">
+                    <h2>Avanzado</h2>
+                    <p class="price">$399</p>
+                    <ul>
+                        <li>Todo en Básico</li>
+                        <li>Tours guiados</li>
+                        <li>Comidas incluidas</li>
+                        <li>Transporte privado</li>
+                        <li>Experiencias únicas</li>
+                    </ul>
+                    <button>Comprar Ahora</button>
+                </div>
+
+                <!-- Plan Premium -->
+                <div class="plan">
+                    <h2>Premium</h2>
+                    <p class="price">$599</p>
+                    <ul>
+                        <li>Todo en Avanzado</li>
+                        <li>Asesor personal</li>
+                        <li>Acceso VIP</li>
+                        <li>Regalos sorpresa</li>
+                        <li>Recuerdos inolvidables</li>
+                    </ul>
+                    <button>Comprar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de testimonios-->
+    <section id="testimonios">
+        
+        <h1 class="carousel-title">Testimonios</h1>
+        <div class="carousel">
+            <button class="carousel-button prev"></button>
+            <div class="carousel-content">
+                <div class="card active">
+                    <h2>Carlos</h2>
+                    <p>Excelente agencia, muy serios y realmente me divertí mucho con mi familia, lo recomiendo. </p>
+                    <span>2024-12-01</span>
+                </div>
+                <div class="card">
+                    <h2>María</h2>
+                    <p>Adquirimos un plan todo incluído en el paquete Barranca, realmente nos sorprendió todo lo que se puede conocer. Lo recomendamos mucho. </p>
+                    <span>2024-11-25</span>
+                </div>
+                <div class="card">
+                    <h2>Juan</h2>
+                    <p>Estuvimos con mi familia conociendo Bucaramanga con Orientours, nos gusto conocer lo más bello de la ciudad bonita. Realmente todo estuvo genial.</p>
+                    <span>2024-12-05</span>
+                </div>
+            </div>
+            <button class="carousel-button next">❯</button>
+        </div>
+    </section>
+
+    <!--Seccion de contacto-->
+    <section id="contactenos">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>¡Contáctanos Para Más Información!</h2>
+                <div class="details">
+                    <p><strong>Teléfono:</strong> +57 315 485 2295</p>
+                    <button class="contact-button">Llámanos</button>
+                    <p><strong>Email:</strong> info@orientetours.com</p>
+                    <button class="contact-button">Escríbenos</button>
+                    <p><strong>Dirección:</strong> Calle de los Viajeros, 123, Bucaramanga</p>
+                    <button class="contact-button">Ver Ubicación</button>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Estamos Aquí Para Ayudarte</h2>
+                <form id="registroForm">
+                    
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <span class="error" id="errorNombre"></span>
+
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <span class="error" id="errorEmail"></span>
+
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    <span class="error" id="errorTelefono"></span>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
